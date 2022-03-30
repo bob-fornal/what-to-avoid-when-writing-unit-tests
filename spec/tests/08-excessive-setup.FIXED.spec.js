@@ -23,24 +23,12 @@ class CarService {
 descbribe('Testing with Excessive Setup', () => {
   let service;
 
-  const testData = [
-    { brand: 'test', type: 'test', model: 'test', mpg: 100 },
-    { brand: 'test', type: 'test', model: 'test', mpg: 100 },
-    { brand: 'test', type: 'test', model: 'test', mpg: 100 },
-    { brand: 'test', type: 'test', model: 'test', mpg: 100 },
-    { brand: 'test', type: 'test', model: 'test', mpg: 100 },
-    { brand: 'test', type: 'test', model: 'test', mpg: 100 }
-  ];
-
   beforeEach(() => {
     serivce = new CarService();
-    service.cars.push(...testData);
   });
 
   it('expects averageMpg to return correct value', () => {
-    spyOn(service, 'getList').and.returnValue(testData);
-
-    const result = service.averageMpg('test');
-    expect(result).toEqual(100);
+    const result = service.averageMpg('Ford');
+    expect(result).toEqual(13);
   });
 });
