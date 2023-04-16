@@ -1,5 +1,24 @@
 {
+  "name": "code-squid-shared-what-to-avoid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bob-fornal/code-squid-shared-what-to-avoid.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bob-fornal/code-squid-shared-what-to-avoid/issues"
+  },
+  "homepage": "https://github.com/bob-fornal/code-squid-shared-what-to-avoid#readme",
   "devDependencies": {
-    "jasmine": "^4.0.2"
+    "jasmine": "^4.6.0"
   }
 }
